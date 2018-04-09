@@ -12,7 +12,7 @@
 ## 前端技术点笔记汇总
 ### Vue.js
 - [基于vue的前端权限实现方案/思路](https://github.com/44021987/vue-permission-control)
-- [vue不完全填坑指南](https://github.com/44021987/mark/blob/master/vue.md)
+- [vue新手不完全填坑指南，持续更新中](https://github.com/44021987/mark/blob/master/vue.md)
 
 ## 前端加密
 - 前端aes加密

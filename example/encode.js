@@ -1,3 +1,7 @@
+/*
+* 以下js在https://github.com/44021987/mark/tree/master/src/js可对应找到
+*/
+
 // aes加密 引入aes.js
 const aesEncode = function (word) {
   var val = this.config.aesCodeVal, // 盐值，必须与后台对应
@@ -32,9 +36,10 @@ const sha384 = function (msg) {
   return CryptoJS.SHA384(msg).toString();
 }
 
-// RSA加密
+// RSA加密 引入jsencrypt.js
 const rsaEncode = function (msg) {
   const encrypt = new JSEncrypt();
   encrypt.setKey(app.config.rsaKey); // app.config.rsaKey必须与后台一致
   return encrypt.encrypt(msg)
 }
+

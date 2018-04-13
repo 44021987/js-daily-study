@@ -45,7 +45,7 @@ module.exports = {
 }
 ```
 
-- **如何区分开发环境和生产环境来设置不同的baseurl**
+- **如何区分开发环境和生产环境来设置不同的baseurl**  
 由于在开发环境调试时的接口地址和正式环境可能不同，有没有方法设置后就不用每次打包都去修改url呢？   
 process.env.BASE_API可以获取baseurl，当然前提是你有在代码里面设置。
 ```javascript
@@ -68,7 +68,7 @@ module.exports = {
 ```
 
 
-- **axios中POST请求后台无法获取到数据解决方案**
+- **axios中POST请求后台无法获取到数据解决方案**  
 在与后台调试中发现POST过去的数据后台接收不到，这是因为axios过去的数据格式是JSON格式，不是formdata格式的数据，所以后台获取不到。这时候需要设置Content-Type并且引入qs使用Qs.stringify(data)解析一下需要传给后台的data数据
 ```javascript
 import axios from 'axios'
@@ -95,7 +95,7 @@ service.interceptors.request.use(config => {
   Promise.reject(error)
 })
 ```
-- **在vue中子父组件传值需要注意的问题**
+- **在vue中子父组件传值需要注意的问题**  
 在使用element-ui封装dialog组件的时候发现element-ui中的dialog在关闭时会修改props中传过来的是否关闭的那个判断值，这时候vue会报错。我在这卡了很久不知道怎么修改，最后发现element-ui修改了props里面的值，这是不允许的。在封装的时候需要解耦，把关闭事件通过$emit通过父组件去修改传进来时的那个值。不清楚我的描述是否能看懂，但是有一点就是子组件不能修改props，如果需要修改props就必须通过$emit在父组件里面修改
 ```javascript
 // 父组件

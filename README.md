@@ -3,28 +3,30 @@
 
 ## 前端进阶之路
 
-1. **Vue.js**
+### Vue.js
 - [基于vue的前端权限实现方案/思路](https://github.com/44021987/vue-permission-control)
 - [vue新手不完全填坑指南，持续更新中](https://github.com/44021987/mark/blob/master/vue.md)
 
-1. **Node.js**
+### Node.js
 - [初学node的一些小项目源码](https://github.com/44021987/mark/blob/master/example/node)
 - [正则表达式30分钟入门教程](http://www.cnblogs.com/deerchao/archive/2006/08/24/zhengzhe30fengzhongjiaocheng.html)
 - [一款免费的在线mongodb数据库](https://mlab.com)
 - [前端脚本测试环境搭建](http://phantomjs.org/)
 
 **也许你想把自己的项目部署在网上让其他人也能看到，那么下面的资料可能会对你有帮助**  
-我用heoku测试部署了一个炒鸡简单的项目，就只有一个首页和2个api接口地址  
-[这是进入的首页展示，首页获取了一个用户信息](https://agile-wildwood-32110.herokuapp.com/)  
-[这是获取用户信息的接口](https://agile-wildwood-32110.herokuapp.com/api/userInfo)  
-[这是爬取的cnode数据的接口，爬的时候需要等几秒才能显示](https://agile-wildwood-32110.herokuapp.com/api/cnode)  
-(⊙o⊙)…顺便说一下就是不要吐槽访问速度嘛。。。。毕竟我用的都是免费的(⊙o⊙)…
+
+  我用heoku测试部署了一个炒鸡简单的项目，就只有一个首页和2个api接口地址  
+  [这是进入的首页展示，首页获取了一个用户信息](https://agile-wildwood-32110.herokuapp.com/)  
+  [这是获取用户信息的接口](https://agile-wildwood-32110.herokuapp.com/api/userInfo)  
+  [这是爬取的cnode数据的接口，爬的时候需要等几秒才能显示](https://agile-wildwood-32110.herokuapp.com/api/cnode)  
+  (⊙o⊙)…顺便说一下就是不要吐槽访问速度嘛。。。。毕竟我用的都是免费的(⊙o⊙)…  
 
 - [Heroku 使用教程](https://www.jianshu.com/p/7bc34e56fa39)
 - [Heroku连接云端MongoDB的方法](https://blog.csdn.net/congyihao/article/details/60747447)
 - [教你在heroku部署一个前后端分离的node项目](https://github.com/44021987/mark/blob/master/example/node/heroku.md)  
 
 **下面是一些有用的第三方库，在做小项目的时候用到，在这里记录一下**
+
 - [cheerio让node操作dom](https://github.com/cheeriojs/cheerio )  
 - [superagent发起http请求](http://visionmedia.github.io/superagent/ )
 - [eventproxy](https://github.com/JacksonTian/eventproxy )
@@ -37,12 +39,12 @@
 
 ## 工具类汇总
 
-1. **数据模拟 Mock.js**
+### 数据模拟 Mock.js
 - [Mock.js文档](https://github.com/nuysoft/Mock/wiki)
 - [easy-mock 基于mock.js的数据生成平台，让你超简单就能模拟出接口及接口数据](https://www.easy-mock.com)
 - [easy-mock生成接口笔记说明](https://github.com/44021987/mark/blob/master/mock.md)
 
-2. **VSCODE配置指南**
+### VSCODE配置指南
 - [为vue配置VSCODE](https://www.zybuluo.com/lesonky/note/1003971)
 
 ## 其他

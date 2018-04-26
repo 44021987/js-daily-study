@@ -14,7 +14,12 @@
 - [前端脚本测试环境搭建](http://phantomjs.org/)
 
 **也许你想把自己的项目部署在网上让其他人也能看到，那么下面的资料可能会对你有帮助**  
-我用heoku测试部署了一个炒鸡简单的项目，就只有一个首页和2个api接口地址[这是进入的首页展示，首页获取了一个用户信息](https://agile-wildwood-32110.herokuapp.com/) [这是获取用户信息的接口](https://agile-wildwood-32110.herokuapp.com/api/userInfo) [这是爬取的cnode数据的接口，爬的时候需要等几秒才能显示](https://agile-wildwood-32110.herokuapp.com/api/cnode) (⊙o⊙)…顺便就是访问速度嘛。。。(⊙o⊙)…
+我用heoku测试部署了一个炒鸡简单的项目，就只有一个首页和2个api接口地址  
+[这是进入的首页展示，首页获取了一个用户信息](https://agile-wildwood-32110.herokuapp.com/)  
+[这是获取用户信息的接口](https://agile-wildwood-32110.herokuapp.com/api/userInfo)  
+[这是爬取的cnode数据的接口，爬的时候需要等几秒才能显示](https://agile-wildwood-32110.herokuapp.com/api/cnode)  
+(⊙o⊙)…顺便说一下就是不要吐槽访问速度嘛。。。。毕竟我用的都是免费的(⊙o⊙)…
+
 - [Heroku 使用教程](https://www.jianshu.com/p/7bc34e56fa39)
 - [Heroku连接云端MongoDB的方法](https://blog.csdn.net/congyihao/article/details/60747447)
 - [教你在heroku部署一个前后端分离的node项目](https://github.com/44021987/mark/blob/master/example/node/heroku.md)  

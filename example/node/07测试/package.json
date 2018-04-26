@@ -1,0 +1,15 @@
+{
+  "name": "lesson07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mocha.js",
+  "dependencies": {
+    "mocha-phantomjs": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

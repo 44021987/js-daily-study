@@ -18,6 +18,41 @@ heroku create
 git push heroku master
 
 ```
-- 部署完了，说说前后分离的开发，在本地是分别开2个端口，没有问题，我用nuxt.js尝试和后端的node一起部署到heroku，但是我失败了，最后只能把前端代码打包出来放在后端代码里静态化。  
+- 就酱紫我们部署完了，是不是炒鸡简单,这里是用express渲染了静态网页，路由都在app.js里。  
 
-最后nuxt.js其实可以部署在heroku官网上有文档，可惜我就是失败了，如果你成功了，请联系我，一起学习。菜鸟进阶之路不易T.T
+### 重新更新一个更简便的方法
+和上面的步骤其实差不多，注册登录是必须的了，区别是在于，前端不是渲染的打包好的静态页面，而是nuxt.js渲染出来的。跟着我下面的步骤来实现以下，nuxt有结合express的模板。
+
+```
+vue init nuxt-community/express-template <project-name>
+cd <project-name> 
+npm install
+
+# 上面的代码是一个前端端结合开发的模板
+# 接下来在本地跑以下代码，如果报错，你可能需要看下backpack有没有安装依赖
+# 如果没有安装backpack，在本地安装以下
+
+npm i backpack-core --save
+
+# 这个模板有一个页面及2个接口
+# localhost:3000/api/users
+# 本地没有问题以后接着在根目录新增一个Procfile文件，文件里写web: npm run dev
+# 然后就是提交数据了，和上面一样,但多了一个步骤，跟着我敲代码啦
+
+git init
+git add .
+git commit -m 'msg'
+
+heroku create # 这一步确保你已经登录了，没有登录请先执行heroku login
+
+# 这一步很关键呀，告诉heroku安装依赖，以生产模式运行，绑定主机
+
+heroku config:set NPM_CONFIG_PRODUCTION=false
+heroku config:set HOST=0.0.0.0
+heroku config:set NODE_ENV=production
+
+# 最后一步
+git push heroku master
+
+```
+上面就差不多是一键部署了，其中可能遇到的问题是根目录如果又有npm又有yarn那么heroku就会报错告诉你删掉一个，你把yarn.lock文件删除即可。heroku官网也有教程，还可以打印信息，错误日志什么的，也可以看看。至此部署node项目差不多就很熟练了，接下来有时间我会加上接入数据库的笔记。

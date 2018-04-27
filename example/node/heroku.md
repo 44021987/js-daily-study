@@ -24,12 +24,13 @@ git push heroku master
 和上面的步骤其实差不多，注册登录是必须的了，区别是在于，前端不是渲染的打包好的静态页面，而是nuxt.js渲染出来的。跟着我下面的步骤来实现以下，nuxt有结合express的模板。
 
 ```
+# 新建一个前后端结合开发的模板
+
 vue init nuxt-community/express-template <project-name>
 cd <project-name> 
 npm install
 
-# 上面的代码是一个前端端结合开发的模板
-# 接下来在本地跑以下代码，如果报错，你可能需要看下backpack有没有安装依赖
+# 接下来在本地跑一下代码，如果报错，你可能需要看下backpack有没有安装依赖
 # 如果没有安装backpack，在本地安装以下
 
 npm i backpack-core --save
@@ -55,4 +56,4 @@ heroku config:set NODE_ENV=production
 git push heroku master
 
 ```
-上面就差不多是一键部署了，其中可能遇到的问题是根目录如果又有npm又有yarn那么heroku就会报错告诉你删掉一个，你把yarn.lock文件删除即可。heroku官网也有教程，还可以打印信息，错误日志什么的，也可以看看。至此部署node项目差不多就很熟练了，接下来有时间我会加上接入数据库的笔记。
+上面就差不多是一键部署了，其中可能遇到的问题是根目录如果有npm又有yarn那么heroku就会报错告诉你删掉一个，因为他不知道用哪一个安装依赖，你把yarn.lock文件删除即可。heroku官网也有教程，还可以打印信息，错误日志什么的，也可以看看。至此部署node项目差不多就很熟练了，如果后面有时间我会加上接入远程数据库的笔记。

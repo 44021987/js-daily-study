@@ -4,7 +4,11 @@
 #### js基本数据类型
 null undefined string number boolean object symbol
 ### typeof 类型
-string number object function boolean symbol
+string number object function boolean symbol  
+只需要记住对于基本类型只有typeof null 是 object,其他和数据类型显示一样  
+对于对象只有typeof function 是 function, 其他都是返回object
+### js中的假值
+除了undefined， null， false， NaN， ''， 0， -0，其他都是真值
 ### 闭包
 我通俗的解释几个概念：  
 - js基于词法作用域：词法作用域简单来讲就是函数在创建时的作用域在执行时依然有效，意思就是你生在哪里，无论你以后人在北上广还是其他地方，你家乡还是你家乡
@@ -133,7 +137,7 @@ https中的s指SSL；http默认端口80/8080等，https默认端口443
 ### 数组的一些操作
 ```js
 // 冒泡排序
-function sortArr(arr) {
+function bubbleSort(arr) {
   arr.forEach((item, i) => {
     for (let k = i + 1; k < arr.length; k++) {
       if (arr[i] > arr[k]) {
@@ -142,6 +146,10 @@ function sortArr(arr) {
     }
   })
   return arr
+}
+// sort函数
+function normalSort (arr) {
+  return arr.sort((a, b) => a - b)
 }
 // 找出字符串或数组中出现最多次的元素
 function foo(arr) {
@@ -174,6 +182,67 @@ const add = currying(function (...rest) {
   }, 0)
 })
 console.log(add(1)(2, 3)(4)()) // 10
+```
+### 通用的单例模式(实际是对闭包的应用)
+```js
+function getSingle (fn) {
+  let result = null
+  return function () {
+    return result || (result = fn.apply(this, arguments))
+  }
+}
+```
+### 对象的深浅拷贝
+对象的拷贝问题，首先我们需要知道引用类型、基本值类型、指针这几个概念。如果不懂的，那就去补基础的基础。
+```js
+const obj = {
+  test: 'hello world',
+  color: ['red', 'blue'],
+  deep: {
+    a: [1],
+    b: [2]
+  },
+  sayHello() {
+    console.log(this.color.join(','))
+  }
+}
+/**
+ * 浅拷贝
+ * 只能深度拷贝值是基本类型的属性和方法，对于值是引用类型的属性还是指针引用
+*/
+const obj1 = {}
+const obj2 = Object.assign(obj)
+const obj3 = { ...obj }
+for (let key in obj) obj1[key] = obj[key]
+obj.color.push('yellow')
+obj1.color.push('black')
+obj1.sayHello = function () {
+  console.log(this.test)
+}
+obj1.sayHello() // hello world
+obj2.sayHello() // red,blue,yellow,black
+obj3.sayHello() // red,blue,yellow,black
+/**
+ * 深拷贝
+ * JSON.tringify转换成对象字符串后再解析成JSON，可以深度拷贝所有属性，但对方法不起作用
+ * 递归实现深拷贝
+ */
+function deepCloneObj(obj) {
+  const copy = obj instanceof Array ? [] : {}
+  for (let key in obj) {
+    const item = obj[key]
+    if (!!item && typeof item === 'object') {
+      copy[key] = deepCloneObj(item)
+    } else {
+      copy[key] = obj[key]
+    }
+  }
+  return copy
+}
+const obj4 = JSON.parse(JSON.stringify(obj))
+const obj5 = deepCloneObj(obj)
+console.log(obj4) // sayHello方法丢失
+console.log(obj5) // 完全深度复制
 ```
 ***
 

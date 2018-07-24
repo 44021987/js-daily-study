@@ -15,7 +15,22 @@ string number object function boolean symbol
 - 闭包： 简单来讲一个函数体内返回了另一个函数，这时候函数体内就会形成闭包。闭包能缓存作用域，如果你理解了词法作用域那就能很好的理解闭包，函数体内返回的函数在创建的时候记住的当前的作用域环境，在它执行的时候依然能够访问。
 - 为什么说闭包容易造成内存泄漏：如果闭包里面返回的函数应用了他创建时父级作用域的变量，并且一直保持引用不释放，这时候就会造成内存泄漏（因为js的垃圾回收机制不会回收还保持引用的变量）
 - 闭包最常见的用法：模块化、单例模式、柯理化、高阶函数等
+### 变量提升
+基础概念：变量声明（var）和函数声明存在变量提升,let和const不存在提升，可能看代码你会更明白：
+```js
+console.log(a) // undefined 未定义，不会报错
+console.log(fn) // 函数可以在声明后的当前作用域顶端使用
+var a = 0
+function fn() {}
+```
+### this问题
+this指向在js里面是个容易搞混的东西，但是记住一点this是谁调用它就指向谁。大多数情况如此，可以通过call\apply\bind方法改变this指向
+### let & const 与var区别
+- const声明不能改变的只是指向的内存地址，对于引用类型内部是可变的。const一旦声明必须赋值
+- let & const与var的区别：都不存在变量提升，使用前都必须已经声明；声明的变量不会成为window的属性
+- 声明变量的方法：var/function/let/const/import/class
 ### h5新特性、css3新特性
+只做收录，答案Googley一下~
 ### 了解AJAX么，如何实现跨域
 AJAX的核心XMLhttpRequest,jsonp可以实现跨域。原理是通过script标签的src属性实现跨域，通过callback传递response，只支持get请求
 ### 优化网页加载速度
@@ -32,6 +47,13 @@ AJAX的核心XMLhttpRequest,jsonp可以实现跨域。原理是通过script标�
  - 闭包
  - 定时器和回调函数
  - 没有被清理的DOM元素
+ ### cookie,sessionStorage以及localStorage的异同
+ 只做收录，答案Googley一下~
+ ### http和https区别及各自默认端口
+https中的s指SSL；http默认端口80/8080等，https默认端口443
+### DOCTYPE声明的作用
+声明文档解析类型告诉标准通用标记语言解析器，它应该使用什么样的文档类型定义（DTD）来解析文档避免浏览器的怪异模式
+
  ### js的继承方式
  - 1.构造继承
  ```javascript
@@ -131,9 +153,7 @@ function objectCreate(obj) {
  ```
  - 6.ES6继承extend
  ES6的继承方便了很多，避免了手动去改原型链的继承方式，语法糖了解一下，清晰易懂。
-### http和https区别及各自默认端口
-https中的s指SSL；http默认端口80/8080等，https默认端口443
-### DOCTYPE声明的作用
+
 ### 数组的一些操作
 ```js
 // 冒泡排序

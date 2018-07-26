@@ -1,3 +1,5 @@
+# js部分
+
 ## js面试中经常会提到的基础概念总结
 都是自己想到什么写什么，对于答案总结难免出错，欢迎指正交流，相互学习。
 
@@ -114,7 +116,7 @@ console.log(dog.test) // 1,2,3
  ```
  - 4.组合继承优化1
  ```js
- // 解决父类被实例化2次的问题，但是子类实例的构造函数指向丢失
+ // 解决父类被实例化2次的问题，但是子类父类共用原型，修改子类原型添加方法会修改父类
 function Animal () {
   this.property = 'Animal'
   this.test = [1, 2]
@@ -141,7 +143,7 @@ Cat.prototype.constructor = Cat
 const cat1 = new Cat()
 console.log(cat1.constructor.name) // Cat
  ```
- Object.create
+ Object.create()的polyfill
  ```js
  // Object.create()
 function objectCreate(obj) {
@@ -177,6 +179,21 @@ function foo(arr) {
     obj[item] ? obj[item]++ : obj[item] = 1
     return obj
   }, {})
+}
+// 去重
+function distinct (arr) {
+  let obj = {}
+  return arr.reduce((newArr, item, i) => {
+  if (!obj[item]) {
+    obj[item] = item
+    newArr.push(item)
+  }
+  if (i === arr.length - 1) obj = null
+  return newArr
+  }, [])
+}
+function distinct2 (arr) {
+  return [...new Set(arr)]
 }
 ```
 ### 柯里化
@@ -245,7 +262,7 @@ obj3.sayHello() // red,blue,yellow,black
 /**
  * 深拷贝
  * JSON.tringify转换成对象字符串后再解析成JSON，可以深度拷贝所有属性，但对方法不起作用
- * 递归实现深拷贝
+ * 递归实现深拷贝（只考虑简单2中情况）
  */
 function deepCloneObj(obj) {
   const copy = obj instanceof Array ? [] : {}
@@ -266,9 +283,11 @@ console.log(obj5) // 完全深度复制
 ```
 ***
 
-### 小技巧
+# js的一些小技巧
 ```js
-// | 0取整
--1.9 | 0
-// 判断奇偶数 & 1 => result 0 偶数 1 基数
+/**
+ * 取整：| 0
+ * 判断奇偶数： & 1 => result 0 偶数 1 基数
+ * 三目：result ? result : other
+ * /
 ```

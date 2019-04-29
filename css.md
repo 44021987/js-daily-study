@@ -1,2 +1,0 @@
-## css采坑记录
-- fixed定位与transform：当父级设置了transform时fixed定位会失效，行为类似于绝对定位。解决办法只能是在transform里面不要设置fixed定位

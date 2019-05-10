@@ -1,5 +1,6 @@
-## 前端资料汇总
-
+## 每日一题
+> 每天更新一个js面试题
+-  [ 2019-05-10 : <u>将整数中每位上的数字进行反转</u>](https://github.com/44021987/js-daily-study/issues/5)
 
 ### 前端面试题与答案汇总
 - [前端面试中经常遇到的问题总结](./前端基础题库.md)
@@ -8,6 +9,8 @@
 - [技术胖155集前端视频教程](https://juejin.im/post/5a5bc8c36fb9a01ca26774eb)
 - [正则表达式30分钟入门教程](http://www.cnblogs.com/deerchao/archive/2006/08/24/zhengzhe30fengzhongjiaocheng.html)
 - [JS正则表达式完整教程](https://juejin.im/post/5965943ff265da6c30653879)
+- [Mock.js文档](https://github.com/nuysoft/Mock/wiki)
+- [easy-mock 基于mock.js的数据生成平台](https://www.easy-mock.com)
 
 ### CSS
 - [css按钮效果合集](https://cssfx.dev/)
@@ -23,11 +26,6 @@
 - [npm基本使用](https://www.runoob.com/nodejs/nodejs-npm.html)
 - [淘宝镜像设置](https://npm.taobao.org/)
 - [基于vue的前端组件库揭秘（包含npm包发布教程）](https://juejin.im/post/5aacd6d55188252c32197273)
-
-### 数据模拟
-- [Mock.js文档](https://github.com/nuysoft/Mock/wiki)
-- [easy-mock 基于mock.js的数据生成平台](https://www.easy-mock.com)
-- [easy-mock生成接口笔记说明](https://github.com/44021987/mark/blob/master/mock.md)
 
 ## Node.js
 - [初学node的一些小项目源码](https://github.com/44021987/mark/blob/master/example/node)

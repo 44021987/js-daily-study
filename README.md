@@ -6,6 +6,11 @@
 
 ### 前端入门系列
 - [技术胖155集前端视频教程](https://juejin.im/post/5a5bc8c36fb9a01ca26774eb)
+- [正则表达式30分钟入门教程](http://www.cnblogs.com/deerchao/archive/2006/08/24/zhengzhe30fengzhongjiaocheng.html)
+- [JS正则表达式完整教程](https://juejin.im/post/5965943ff265da6c30653879)
+
+### CSS
+- [css按钮效果合集](https://cssfx.dev/)
 
 ### 调试
 - [Chrome调试工具技巧，作者翻译的这一个系列非常棒](https://juejin.im/post/5c09a80151882521c81168a2)
@@ -26,7 +31,6 @@
 
 ## Node.js
 - [初学node的一些小项目源码](https://github.com/44021987/mark/blob/master/example/node)
-- [正则表达式30分钟入门教程](http://www.cnblogs.com/deerchao/archive/2006/08/24/zhengzhe30fengzhongjiaocheng.html)
 - [一款免费的在线mongodb数据库](https://mlab.com)
 - [前端脚本测试环境搭建](http://phantomjs.org/)
 - [Heroku 使用教程](https://www.jianshu.com/p/7bc34e56fa39)
@@ -35,8 +39,10 @@
 
 ### 服务端
 - [前端必须知道的nginx基础](https://jspang.com/posts/2018/10/05/nginx.html#%E7%AC%AC01%E8%8A%82-%E5%88%9D%E8%AF%86nginx%E5%92%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87)
+
 ## 浅谈性能优化
 - [首屏渲染从12.67s到1.06s](https://imweb.io/topic/5b6fd3c13cb5a02f33c013bd)
+
 ## 其他
 - [为vue配置VSCODE](https://www.zybuluo.com/lesonky/note/1003971)
 - [阿里云oss web直传方案实现](https://github.com/44021987/mark/blob/master/oss.md)

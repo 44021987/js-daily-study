@@ -1,7 +1,8 @@
 ## 每日一题
 > 每天更新一个js面试题
+- [ 2019-05-14 : 输入一个字符串,按字典序打印出该字符串中字符的所有排列](https://github.com/44021987/js-daily-study/issues/7)
 - [ 2019-05-11 : 查找字符串数组中的最长公共前缀，不存在公共前缀返回空字符串](https://github.com/44021987/js-daily-study/issues/6)
--  [ 2019-05-10 : 将整数中每位上的数字进行反转](https://github.com/44021987/js-daily-study/issues/5)
+- [ 2019-05-10 : 将整数中每位上的数字进行反转](https://github.com/44021987/js-daily-study/issues/5)
 
 ### 前端面试题与答案汇总
 - [前端面试中经常遇到的问题总结](./前端基础题库.md)
@@ -34,7 +35,6 @@
 - [前端脚本测试环境搭建](http://phantomjs.org/)
 - [Heroku 使用教程](https://www.jianshu.com/p/7bc34e56fa39)
 - [Heroku连接云端MongoDB的方法](https://blog.csdn.net/congyihao/article/details/60747447)
-- [教你在heroku部署一个前后端分离的node项目](https://github.com/44021987/mark/blob/master/example/node/heroku.md)  
 
 ### 服务端
 - [前端必须知道的nginx基础](https://jspang.com/posts/2018/10/05/nginx.html#%E7%AC%AC01%E8%8A%82-%E5%88%9D%E8%AF%86nginx%E5%92%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87)

@@ -1,5 +1,6 @@
 ## 每日一题
 > 每天更新一个js面试题
+- [2019-05-15 : 【知识点】js中函数的参数传递](https://github.com/44021987/js-daily-study/issues/8)
 - [ 2019-05-14 : 输入一个字符串,按字典序打印出该字符串中字符的所有排列](https://github.com/44021987/js-daily-study/issues/7)
 - [ 2019-05-11 : 查找字符串数组中的最长公共前缀，不存在公共前缀返回空字符串](https://github.com/44021987/js-daily-study/issues/6)
 - [ 2019-05-10 : 将整数中每位上的数字进行反转](https://github.com/44021987/js-daily-study/issues/5)
@@ -48,4 +49,5 @@
 - [前端AES/sha384/RSA加密实现](https://github.com/44021987/mark/blob/master/example/encode.js)
 - [前端国密加密算法](https://github.com/44021987/smEncrypt)
 - [如何定义好一个符合规范的url](https://www.cnblogs.com/wangsen/p/5890995.html)
+
 

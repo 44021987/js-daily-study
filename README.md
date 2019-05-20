@@ -1,5 +1,6 @@
 ## 每日一题
 > 每天更新一个js面试题
+- [2019-05-20 : 【知识点】手动实现一个Promise](https://github.com/44021987/js-daily-study/issues/9)
 - [2019-05-15 : 【知识点】js中函数的参数传递](https://github.com/44021987/js-daily-study/issues/8)
 - [ 2019-05-14 : 输入一个字符串,按字典序打印出该字符串中字符的所有排列](https://github.com/44021987/js-daily-study/issues/7)
 - [ 2019-05-11 : 查找字符串数组中的最长公共前缀，不存在公共前缀返回空字符串](https://github.com/44021987/js-daily-study/issues/6)

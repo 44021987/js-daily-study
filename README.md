@@ -1,5 +1,6 @@
 ## 每日一题
 > 每天更新一个js面试题
+- 2019-07-23 : 【知识点】谈谈对事件队列宏任务/微任务的理解
 - [2019-05-20 : 【知识点】手动实现一个Promise](https://github.com/44021987/js-daily-study/issues/9)
 - [2019-05-15 : 【知识点】js中函数的参数传递](https://github.com/44021987/js-daily-study/issues/8)
 - [ 2019-05-14 : 输入一个字符串,按字典序打印出该字符串中字符的所有排列](https://github.com/44021987/js-daily-study/issues/7)
@@ -43,6 +44,7 @@
 
 ## 浅谈性能优化
 - [首屏渲染从12.67s到1.06s](https://imweb.io/topic/5b6fd3c13cb5a02f33c013bd)
+-[vue性能优化9法](https://www.bilibili.com/video/av52738855)
 
 ## 其他
 - [为vue配置VSCODE](https://www.zybuluo.com/lesonky/note/1003971)
